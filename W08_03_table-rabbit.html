@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableRabbit</title>
+    <style>
+        /* body{
+            font-family: "Kanit" sans-serif;
+            padding: 100;
+            margin: 100;
+        } */
+        /* table {
+            width: 100%;
+            border-collapse:collapse ;
+        } */
+         body{
+            padding: 0%;
+            margin: 0%;
+         }
+        .main1{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .image{
+            border-spacing: 20px;
+            width: 100%;
+            background-color: rgb(243, 222, 152);
+            text-align: center;
+
+        }
+        .menu{
+            vertical-align: top;
+            background-color: rgba(250, 233, 134, 0.473);
+            width: 25%;
+        }
+        ul {
+            list-style: none;
+            padding: 20px;
+            margin: 0;
+            line-height: 1.4rem;
+          
+        }
+        a {
+            text-decoration: none;
+            color: rgb(4, 94, 94);
+        }
+        a:hover{
+            color: rgb(240, 41, 6);
+            font-size: 18px;
+        }
+        .img-rabbit{
+            border-radius: 20px;
+            border:6px  solid white
+          
+        }
+        .paragraph{
+            text-align: center;
+            background-color: bisque;
+            padding: 10px;
+            margin: 0;
+
+        }
+        .footer{
+            text-align: center;
+            background-color: blanchedalmond;
+            padding: 10px;
+            margin:0 ;
+            line-height: 1.2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- borderคอบ -->
+    <!-- colspanแนวนอน -->
+    <!-- rowspanแนวตั้ง -->
+    <table border="1" class="main1"> 
+        <tr>
+            <td colspan="2">
+            <img src="images/rabbit tab.png" alt="Headind" width="100%">    
+        </td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="menu">
+                <ul>
+                    <li><a href="#">ข่าว</a></li>
+                    <li><a href="#">ติดต่อ</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">อื่นๆ</a></li>
+                    <li><a href="#">back to Home</a> </li>
+                </ul>
+            </td>
+
+
+            <td>
+                <table border="1" class="image" >
+                    <tr>
+                        <td>
+                          <img src="images/rabbit3.jpg" alt="1" width="300px" class="img-rabbit"> 1 </td>
+                        <td>2
+                            <img src="images/rabbit3.jpg" alt="1" width="300px"class="img-rabbit">2 </td>
+                        <td>
+                            <img src="images/rabbit3.jpg" alt="1" width="300px"class="img-rabbit">3</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/rabbit3.jpg" alt="1" width="300px"class="img-rabbit">4</td>
+                        <td>
+                            <img src="images/rabbit3.jpg" alt="1" width="300px"class="img-rabbit">5</td>
+                        <td>
+                            <img src="images/rabbit3.jpg" alt="1" width="300px"class="img-rabbit">6</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis expedita neque laudantium, minima ipsa totam vel reprehenderit in vitae reiciendis ex dolores exercitationem nam excepturi officia illum tenetur? Harum dolore, perferendis facilis quos alias dolorem qui minus rem cupiditate similique eaque eveniet recusandae quae blanditiis illum inventore quaerat natus cumque earum in ullam dolores. Quasi quo debitis labore dolor.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <p>
+                    Mr.Pungon Somnuek 664230043 66/46 Information Technology,<br>Science and Technology Nakhon Patom Rajabhat University
+                </p>
+
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
+<!-- list-style: none คือตกเเต่งไม่ให้มีจุด -->
+<!-- a:hover คือเเทกที่เราจะเเต่งก่อนหน้า -->
