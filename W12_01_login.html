@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:'Niramit' Arial, Helvetica, sans-serif;
+        background: rgb(0,212,255);
+background: linear-gradient(90deg, rgba(0,212,255,1) 46%, rgba(204,85,85,1) 72%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        }
+    .container{
+    display: flex;
+    background-color: bisque;
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px ;
+
+    }
+    .left-side{
+        background-image: url(images/forrest.jfif);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: darken;
+        background-color: rgb(219, 189, 189);
+        
+        color: azure;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 60%;
+
+
+    }
+    .right-side {
+        padding: 40px;
+        width: 40%;
+    }
+        form {
+            label{
+                display: block;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            input{
+                width: 100%;
+                padding: 6px;
+                box-sizing: border-box;
+                margin-bottom: 8px;
+            }
+            input[type="submit"] {
+                background-color: rgb(255, 46, 238);
+                color: rgb(0, 0, 0);
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+            input[type="submit"]{
+                background-color: rgb(251, 0, 255);
+                color: rgb(0, 0, 0);
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+
+            }
+
+            input[type="submit"]:hover{
+                background-color: rgb(191, 67, 244);
+        }
+
+    }
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    a:hove {
+        color: blue;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>information technology</h2>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนวิชาการออกเเบบเเละพัฒนาเว็บไซต์</p>
+        </div>
+        <div class="right-side">
+            <h3>Login</h3>
+            <form action="" method="post"> 
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" placeholder="Enter your password" required>
+                <input type="submit" value="Login">
+
+            </form>
+            <p>Forgot  
+                <a href="#">Password</a
+            </p>
+            <p>don't have an account? 
+            <a href="#">Register</a></p>
+        </div>
+    </div>
+</body>
+</html>
