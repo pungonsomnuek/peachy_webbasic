@@ -1,194 +1,333 @@
 :root {
-    --primary-color: rgb(255, 0, 98);
-    --secondary-color:rgb(255, 183, 0);
-    --text-color-normal:black;
-    --base-color-white:white;
-    --background-color:gray;
-    --box-shadow:0px 1px 5px rgba(158, 158, 158, 0.573);
-
+  --primary-color: blue;
+  --secondary-color: rgb(0, 228, 245);
+  --text-color-normal: black 0px 1px 7px;
+  --base-color-white: rgb(255, 255, 255);
+  --background-color: rgb(128, 121, 121);
+  --box-shadow: rgb(99, 97, 97) 0px 1px 7px;
 }
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color-normal);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-color-normal);
 }
-
-/* Header Section */
 
 header {
-    background-color: var(--base-color-white);
-    box-shadow: var(--box-shadow);
-    padding: 15px 20px;
-    /* border: 1px solid red; */
-    
+  padding: 15px 20px;
+  box-shadow: var(--box-shadow);
 }
-
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    max-width: 1200px;
-    margin: 0 auto;
-    /* border: 1px solid rgb(136, 0, 255); */
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 .logo-menu {
-    display: flex;
+  display: flex;
 }
-
 .logo {
-    display: flex;
-    align-items: center;
-    img {
-        width: 30px;
-        height: auto;
-    }
+  display: flex;
+  align-items: center;
+  img {
+    width: 50px;
+    height: auto;
+  }
+}
+/* .header-button {
+} */
+
+.btn-filled {
+  background-color: var(--primary-color);
+  color: var(--base-color-white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn-filled:hover {
+  background-color: var(--secondary-color);
 }
 
+.btn-outlined {
+  background-color: var(--base-color-white);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn-outlined:hover {
+  background-color: var(--secondary-color);
+  color: rgb(0, 0, 0);
+}
 
-/* Button Style */
-    .btn-filled {
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: 1px solid var(--primary-color);
-        transition: all 0.3s ease;
-        
-        background-color: var(--primary-color);
-        color: var(--base-color-white);
-
-    }
-    .btn-filled:hover {
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: 1px solid var(--secondary-color);
-        
-        background-color: var(--secondary-color);
-        color: var(--base-color-white);
-
-    }
-    .btn-outline {
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: 1px solid var(--secondary-color);
-
-        background-color: var(--base-color-white);
-        color: var(--secondary-color);
-        transition: all 0.3s ease;
-
-    }
-    .btn-outline:hover {
-
-        background-color: var(--secondary-color);
-        color: var(--base-color-white);
-
-    }
-
-/* Menu */
 nav {
-    margin-left: 20px;
-    align-self: center;
-    ul{
-        display: flex;
-        gap: 15px;
-    }
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        font-weight: bold;
-        color: rgb(255, 0, 98);
-    }
-    a:hover {
-        color: rgb(255, 196, 0);
-    }
+  align-self: center;
 }
 
-/* Container Section */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin-left: 20px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(6, 115, 204);
+  }
+  a:hover {
+    color: rgb(231, 134, 15);
+  }
+}
+
+/* container Section */
+
 .container {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px ;
-
-    /* Hero Section */
-    .hero {
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-
-        .left-side {
-            width: 50%;
-            /* border: 1px solid red; */
-            h1 {
-                color: var(--secondary-color);
-                font-size: 2.5rem;
-                margin-bottom: 24px;
-            }
-            p {
-                font-size: 1.2rem;
-                margin: 24px 0;
-            }
-        }
-        .right-side {
-            /* border: 1px solid rgb(0, 76, 255); */
-            width: 50%;
-            img {
-                width: 100%;
-            }
-        }
-    }
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
-/*solutio section*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.solution{
+.left-side {
+  width: 50%;
+  h1 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 24px 0;
+  }
+}
+.right-side {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+/* Solution Section */
+Solution {
   margin-top: 50px;
 }
-.solution-heading{
+
+.solution-heading {
   text-align: center;
   margin-bottom: 24px;
-  }
 
   p {
     font-size: 1.2rem;
     margin-bottom: 24px;
   }
+}
 
-h2{
+.solution-content {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    width: 32%;
+  }
+}
+
+h2 {
   font-size: 2rem;
   color: var(--primary-color);
   margin-bottom: 24px;
 }
 
-.solution-content{
-  display: flex;
-  justify-content: space-between;
-
-    .item{
-    width: 32%;
-}
-}
-
-
-.item{
+.item {
   box-shadow: var(--box-shadow);
   border-radius: 10px;
   padding: 20px;
-  /*margin: 10px;*/
+  /* margin: 10px; */
 }
 
-/*discover section*/
+/* Discover Section */
 
-.discover-content{
+.discover-content {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
+footer {
+  background-color: var(--primary-color);
+  color: var(--base-color-white);
+  padding: 20px 0;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.footer-left {
+  h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+}
+
+.footer-right {
+  display: flex;
+  gap: 40px;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--base-color-white);
+    }
+  }
+}
+
+.footer-item {
+  h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+
+  /* (ทำให้มีการเปลี่ยนสีเมือเลื่อนเมาร์ไปที่อักษร) */
+  a:hover {
+    color: var(--secondary-color);
+  }
+}
+
+/* Responsive for Teble */
+
+.hamburger-icon {
+  /* (เอาไว้ซ้อน) */
+  display: none;
+}
+
+.full-screen-menu {
+  display: none;
+}
+
+.header-outlined {
+  display: none;
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .header {
+    padding: 5 px 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .solution-content {
+    flex-direction: column;
+
+    .item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* .customize {
+    flex-direction: column;
+  } */
+
+  /* .support {
+    flex-direction: column;
+  } */
+
+  .discover-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    .footer-right {
+      flex-direction: column;
+    }
+  }
+
+  .footer-item {
+    margin-top: 10px;
+  }
+
+  /* เมนูเต็มจอ */
+  .full-screen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* พื้นหลังสีดำโปร่งแสง */
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 999;
+  }
+
+  .full-screen-menu ul {
+    list-style: none;
+    padding-top: 50px;
+  }
+
+  .full-screen-menu ul li {
+    margin: 20px 0;
+  }
+
+  .full-screen-menu ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .full-screen-menu ul li a:hover {
+    color: var(--secondary-color);
+  }
+
+  /* ปุ่มปิดเมนู */
+  .close-btn {
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+}

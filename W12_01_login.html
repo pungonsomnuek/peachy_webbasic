@@ -3,122 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">s
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <style>
+
         body{
             margin: 0;
             padding: 0;
-            font-family:'Niramit';
-        background: rgb(0,212,255);
-background: linear-gradient(90deg, rgba(0,212,255,1) 46%, rgba(204,85,85,1) 72%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-        }
-    .container{
-    display: flex;
-    background-color: bisque;
-    width: 700px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px ;
-
-    }
-    .left-side{
-        background-image: url(images/forrest.jfif);
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: darken;
-        background-color: rgb(219, 189, 189);
-        
-        color: azure;
-        text-align: center;
-        text-transform: uppercase;
-        padding: 20px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        width: 60%;
-
-
-    }
-    .right-side {
-        padding: 40px;
-        width: 40%;
-    }
-        form {
-            label{
-                display: block;
-                font-size: 14px;
-                margin-bottom: 5px;
-            }
-            input{
-                width: 100%;
-                padding: 6px;
-                box-sizing: border-box;
-                margin-bottom: 8px;
-            }
-            input[type="submit"] {
-                background-color: rgb(255, 46, 238);
-                color: rgb(0, 0, 0);
-                border: none;
-                padding: 10px;
-                cursor: pointer;
-            }
-            input[type="submit"]{
-                background-color: rgb(251, 0, 255);
-                color: rgb(0, 0, 0);
-                border: none;
-                padding: 10px;
-                cursor: pointer;
-
-            }
-
-            input[type="submit"]:hover{
-                background-color: rgb(191, 67, 244);
+            font-family: 'Itim',Arial, Helvetica, sans-serif;
+            background: rgb(19,88,187);
+            background: rgb(19,88,187);
+            background: linear-gradient(90deg, rgba(19,88,187,1) 48%, rgba(79,10,218,1) 99%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-    }
-    a {
-        color: blue;
-        text-decoration: none;
-    }
-    a:hove {
-        color: blue;
-        text-decoration: none;
-    }
+        .container{
+            display: flex;
+            background-color: rgb(131, 222, 250);
+            width: 700px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgb(241, 233, 233);
+        }
+
+        .left-side{
+            background-image: url("image/ก้านกล้วย.jfif");
+            background-size: cover ;
+            color: white;
+            background-position: center;
+            background-blend-mode: darken;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            text-transform: uppercase;
+
+            width: 60%;
+        }
+
+        .right-side{
+            padding: 40px;
+            width: 40%;
+
+            form {
+                label{
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+                input {
+                    width: 100%;
+                    padding: 6px;
+                    box-sizing: border-box;
+                    margin-bottom: 8px;
+                }
+                input[type="submit"] {
+                    background-color: rgb(13, 48, 204);
+                    color: aliceblue;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                input[type="submit"]:hover {
+                    background-color: rgb(29, 29, 99);
+                }
+                
+            }
+        }
+
+        a:hover {
+            color: rgb(18, 183, 233);
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
+
     <div class="container">
         <div class="left-side">
             <h2>information technology</h2>
-            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนวิชาการออกเเบบเเละพัฒนาเว็บไซต์</p>
+            <p>ยินดี้ต้อนรับเข้าสู่เว็บไซต์การเรียนวิชาการออกแบบและพัฒนาเว็บไซส์</p>
+            <!-- <img src="" alt=""> -->
         </div>
+
+
         <div class="right-side">
             <h3>Login</h3>
-            <form action="" method="post"> 
+            <form id="loginForm" action="" method="post">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter your username" required>
-
+                <input type="text" name="username" id="username" placeholder="Enter your username">
                 <label for="password">Password</label>
-                <input type="text" name="password" id="password" placeholder="Enter your password" required>
+                <input type="text" name="password" id="password" placeholder="Enter your password">
+
+                <div class="error-message" id="errorMsg"></div>
+
                 <input type="submit" value="Login">
 
+
+
             </form>
-            <p>Forgot  
-                <a href="#">Password</a
-            </p>
-            <p>don't have an account? 
-            <a href="#">Register</a></p>
+
+            <p>Forgot <a href="#">Password?</a></p>
+            <p>Don't have an account? <a href="#">Register</a></p>
         </div>
+
     </div>
+
+  <script>
+        // เพิ่ม event listener ให้กับฟอร์มที่มี id เป็น "loginForm"
+        // เมื่อผู้ใช้กด submit จะเรียกใช้ฟังก์ชันที่กำหนด
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // ป้องกันการโหลดหน้าใหม่เมื่อกดปุ่ม submit
+   
+            // ดึงค่าที่ผู้ใช้ป้อนจาก input field (username และ password) และตัดช่องว่างด้านหน้า/หลังออก
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let errorMsg = document.getElementById("errorMsg"); // อ้างอิงถึง div ที่ใช้แสดงข้อความ error
+   
+            // ตรวจสอบว่าผู้ใช้กรอกข้อมูลครบหรือไม่
+            if (username === "" || password === "") {
+                errorMsg.textContent = "กรุณากรอก Username และ Password"; // แสดงข้อความแจ้งเตือน
+                return; // ออกจากฟังก์ชันทันที ไม่ดำเนินการตรวจสอบต่อ
+            }
+   
+            // ตรวจสอบว่าข้อมูลที่ป้อนตรงกับค่าที่กำหนดไว้หรือไม่ (username: "admin", password: "1234")
+            if (username === "admin" && password === "1111") {
+                //alert("เข้าสู่ระบบสำเร็จ!"); // แจ้งเตือนผู้ใช้ว่าล็อกอินสำเร็จ
+                window.location.href = "W13_01_webResponsive.html"; // เปลี่ยนหน้าไปยังเป้าหมาย"
+            } else {
+                errorMsg.textContent = "Username หรือ Password ไม่ถูกต้อง"; // แสดงข้อความ error เมื่อป้อนข้อมูลผิด
+            }
+        });
+
+    </script>
+
 </body>
 </html>
