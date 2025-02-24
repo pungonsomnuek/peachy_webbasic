@@ -1,9 +1,9 @@
 :root {
-  --primary-color: blue;
-  --secondary-color: rgb(0, 228, 245);
+  --primary-color: rgb(255, 205, 41);
+  --secondary-color: rgb(134, 133, 44);
   --text-color-normal: black 0px 1px 7px;
   --base-color-white: rgb(255, 255, 255);
-  --background-color: rgb(128, 121, 121);
+  --background-color: rgb(175, 123, 123);
   --box-shadow: rgb(99, 97, 97) 0px 1px 7px;
 }
 
@@ -81,7 +81,7 @@ nav ul {
   a {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(6, 115, 204);
+    color: rgb(255, 174, 0);
   }
   a:hover {
     color: rgb(231, 134, 15);
