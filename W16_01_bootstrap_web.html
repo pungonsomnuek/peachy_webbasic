@@ -54,6 +54,15 @@
     .plan-features li .cross {
         color: red;
     }
+    .card{
+        width: 100%;
+        
+    }
+    .img-size{
+        width: auto;
+        height: 50px;
+    }
+    
     </style>
 
 </head>
@@ -63,7 +72,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container">
             <div class="d-flex align-items-center">
-                <img src="images/Tinder.png" alt="" width="24px">
+                <img class=" clickable-image"  src="images/Tinder.png" alt="" width="24px">
                         <a class="navbar-brand ms-2" href="#"  >Wirga</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,9 +123,9 @@
     </div>
 
     <!--Carousel-->
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade"data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade"data-bs-ride="carousel ">
 
-        <div class="carousel-indicators">
+        <div class="carousel-indicators ">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -125,16 +134,16 @@
         <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="2000">
             <img src="images/banner01.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
             <img src="images/banner02.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
             <img src="images/banner03.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
             <img src="images/banner02.jpg" class="d-block w-100" alt="...">
-          </div>
+        </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -154,7 +163,7 @@
         <div class="row">
 
         <div class="col-md-4">
-            <div class="card pricing-card p-4 mb-4 ">
+            <div class="card pricing-card p-4 mb-4 m-auto ">
                 <h3 class="plan-title text-primary">Free Plan</h3>
                 <p class="plan-price ">$0</p>
                 <p class="text muted">per month</p>
@@ -168,7 +177,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card pricing-card p-4 mb-4">
+            <div class="card pricing-card p-4 mb-4 m-auto">
                 <h3 class="plan-title text-primary">Free Plan</h3>
                 <p class="plan-price ">$29</p>
                 <p class="text muted">per month</p>
@@ -182,7 +191,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card pricing-card p-4" mb-4>
+            <div class="card pricing-card p-4 m-auto" mb-4>
                 <h3 class="plan-title text-primary">Free Plan</h3>
                 <p class="plan-price ">$49</p>
                 <p class="text muted">per month</p>
@@ -195,13 +204,101 @@
                 </ul>
             </div>
         </div>
-
-
-
-
-            
-        </div>
     </div>
+</div>
+    
+<!-- Table section -->
+        <div class="container-fluid bg-body-secondary py-5">
+            <div class="container ">
+                <div class="card p-5  m-auto">
+                    <h1 class="text-center text-uppercase text-danger text-bg-dark">member</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid exercitationem nulla cum natus tempora sint commodi sed earum  corporis quos?</p>
+<!-- creat table -->
+    <table class="table table-hover table-responsive">
+    <thead>
+    <tr class="table-dark">
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        <th scope="col">Photo</th>
+    </tr>
+    </thead>
+    <tbody class="table-group-divider">
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td><img src="images/rabbit3.jpg" alt="" class="img-size img-thumbnail   clickable-image"></td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td><img src="images/rabbit4.jfif" alt=""class="img-size img-thumbnail clickable-image "></td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+        <td><img src="images/porch.jfif" alt="" class="img-size img-thumbnail clickable-image"></td>
+    </tr>
+    
+    
+    
+    </tbody>
+</table>
+
+                </div>
+            </div>
+        </div>
+        <!-- contact section -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="text-capitalize">Contact US</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum reprehenderit quaerat doloribus placeat ?</p>
+                        <p>Address : Nakhon Pathom, Thailand</p>
+                        <p>Phone : +66 092-2614770</p>
+                    </div>
+                   
+                
+<!-- creat form -->
+
+
+<div class="col-md-6">
+    <form id="contactForm">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+    </div>
+
+        <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email"aria-describedby="emailHelpHelp">
+        </div>
+
+        <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+    <textarea type="message" class="form-control" id="message"rows="4"></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+ </div>
+</div>
+</div>
+</div>
+
+
 
 
 
@@ -223,6 +320,84 @@ Nakhon Pathom Rajabhat University</p>
 
     <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<script>
+    //โค้ดนี้ใช้ JavaScript เพื่อเลือกทุกองค์ประกอบ <img> ที่มี class="clickable-image" [จะเลือก ทั้ง 3 รูป] และเพิ่ม Event Listener ให้กับแต่ละรูปภาพ เพื่อให้สามารถคลิกแล้วเกิด popup (SweetAlert2) แสดงรูปขยายได้
+
+    document.querySelectorAll(".clickable-image").forEach(img => {   //img แทนแต่ละรูปที่ถูกเลือกในลูป
+        img.addEventListener("click", function() {    //เพิ่มฟังก์ชันให้ แต่ละรูป เมื่อถูกคลิก
+
+            Swal.fire({
+                title: 'Image Preview',
+                imageUrl: img.src, // ใช้ src ของรูปที่คลิก
+                imageWidth: 500, // ขนาดรูปที่ขยาย
+                imageHeight: 'auto',
+                imageAlt: img.alt, // ใช้ alt ของรูป
+                showCloseButton: true,
+                confirmButtonText: 'Close'
+            });
+        });
+    });
+</script>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name && email && message) {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your message has been sent.',
+
+                //text: 'Your message has been sent.\n\n' +
+                //'Name: ' + name + '\n' +
+                //'Email: ' + email + '\n' +
+                //'Message: ' + message,
+
+                //html: `<p>Your message has been sent.</p>
+                //<p><b>Name:</b> ${name}</p>
+                //<p><b>Email:</b> ${email}</p>
+                //<p><b>Message:</b> ${message}</p>`,
+
+                icon: 'success',
+                confirmButtonText: 'OK',
+
+
+                //showConfirmButton: false,
+                //timer: 3500
+
+
+            }).then(() => {
+                // Optional: Reset form after submission
+                document.getElementById('contactForm').reset();
+            });
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please fill out all fields.',
+                icon: 'error',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red',
+
+                timer: 3500
+            });
+        }
+    });
+</script>
+
+
 </body>
 </html>
 cdn.jsdelivr.net
